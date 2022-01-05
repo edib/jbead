@@ -26,7 +26,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 public class JBeadApp {
 
     public static void main(String[] args) throws Exception {
-        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        // UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
         final JBeadFrame beadform = new JBeadFrame(args);
         beadform.setMaximizedBounds(beadform.getMaxBounds());
         if (beadform.isConfigMaximized()) {

@@ -130,7 +130,8 @@ public class JBeadFrame extends JFrame implements Localization, View, ModelListe
     private static final int UPDATE_INTERVAL = 500;
 
     static {
-        Locale.setDefault(Locale.ENGLISH);
+    	Locale trlocale= new Locale("tr");
+        Locale.setDefault(trlocale);
     }
     private ResourceBundle bundle = ResourceBundle.getBundle("jbead");
 

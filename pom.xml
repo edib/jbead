@@ -1,0 +1,21 @@
+<plugin>
+  <artifactId>jbead</artifactId>
+  <configuration>
+    <descriptorRefs>
+      <descriptorRef>jar-with-dependencies</descriptorRef>                            
+    </descriptorRefs>
+    <archive>
+      <manifest>
+        <mainClass>ch.jbead.JBeadApp</mainClass> 
+      </manifest>
+    </archive>
+  </configuration>
+  <executions>
+    <execution>
+      <goals>
+        <goal>single</goal>                                                           
+      </goals>
+      <phase>package</phase>                                                          
+    </execution>
+  </executions>
+</plugin>
